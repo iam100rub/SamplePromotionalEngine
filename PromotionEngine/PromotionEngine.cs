@@ -14,6 +14,11 @@ namespace PromotionEngine
     {
         static void Main(string[] args)
         {
+		//calculate total based on order detail, go to create order class to change the order scenario
+            CalculateOrderTotal objCalculateOrderTotal = new CalculateOrderTotal();
+            decimal total = objCalculateOrderTotal.CalculateTotal();
+            //total amount after applying promotion
+            Console.WriteLine("Total = " + total);
             Console.ReadKey();
         }
     }
